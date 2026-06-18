@@ -21,4 +21,4 @@ wss.on('connection', (ws) => {
     });
 });
 
-console.log('🚀 服务器已启动: ws://localhost:8080');
+console.log(`🚀 服务器已启动: ws://localhost:${port}`);
