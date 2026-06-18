@@ -1,8 +1,10 @@
 // 1. 引入 WebSocket 库
 const WebSocket = require('ws');
 
+const port = process.env.PORT || 8080;
+
 // 2. 创建服务器，监听 8080 端口
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: port });
 
 // 3. 监听连接事件
 wss.on('connection', (ws) => {
